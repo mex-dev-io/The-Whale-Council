@@ -402,22 +402,6 @@
             opacity: 0.6;
         }
 
-        /* Scroll indicator */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            animation: fade-rise 1.2s ease-out 1.5s forwards, pulse 3s ease-in-out 2.5s infinite;
-        }
-
-        .scroll-indicator svg {
-            width: 24px;
-            height: 24px;
-            stroke: var(--color-whisper);
-        }
-
         @keyframes fade-rise {
             from {
                 opacity: 0;
@@ -473,11 +457,7 @@
                 </div>
             </div>
             
-            <div class="scroll-indicator" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                    <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor"/>
-                </svg>
-            </div>
+
         </section>
 
         <!-- The Verdict -->
